@@ -1,0 +1,11 @@
+@import "~bootstrap";
+@import "~font-awesome";
+
+@import "helper/variables";
+
+@import "layout/header";
+@import "layout/footer";
+
+body {
+    background-color: lightblue;
+}
