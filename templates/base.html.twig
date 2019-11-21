@@ -8,11 +8,27 @@
         {% endblock %}
     </head>
     <body>
-        <nav>
+        <nav class="d-flex justify-content-between align-items-center container">
+            {# TODO: resize logo #}
             <img src="{{ asset('build/images/logo_maker.png') }}" alt="Maker logo">
+            <div>
+                <i class="fa fa-bars"></i> Menu
+                {# TODO: JS menu #}
+            </div>
         </nav>
 
         {% block body %}{% endblock %}
+
+        <footer class="d-flex align-items-center flex-column">
+            <div>
+                <img src="{{ asset('build/images/logo_maker_inverted.png') }}" alt="Maker logo">
+            </div>
+            <div>
+                <a href="#">Lancer une campagne</a>
+                <a href="#">Changer d'abonnement</a>
+                <a href="#">Aide</a>
+            </div>
+        </footer>
 
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
